@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    
+    <title>Alyson & Kyle's Wedding</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Asap|Questrial|Great+Vibes|Pinyon+Script|Satisfy&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <main class="container-fluid">
+    <nav>
+    <div class="nav-wrapper col-12-sm z-depth-3" style="background-color: #f5eef2;">
+        <div class="container-fluid left-logo col-12">
+          <a href="#!" class="brand-logo">Alyson & Kyle</a>
+        </div>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="right menu-items hide-on-med-and-down">
+        <li><a href="sass.html">WEDDING DETAILS</a></li>
+        <li><a href="badges.html">RECEPTION</a></li>
+        <li><a href="collapsible.html">REGISTRY</a></li>
+        <li style="margin-right: 10px;"><a href="mobile.html">PHOTO GALLERY</a></li>
+        </ul>
+    </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+    <li><a href="#">WEDDING DETAILS</a></li>
+    <li><a href="#">RECEPTION</a></li>
+    <li><a href="#">REGISTRY</a></li>
+    <li><a href="#">PHOTO GALLERY</a></li>
+    </ul>
+
+    <!-- PARALLAX -->
+
+    <div class="parallax-container">
+        <div class="parallax"><img src="images/image1.jpg"></div>
+    </div>
+
+    <div class="z-depth-3 section white" style="text-align: center;">
+        <div class="row container flow-text"><br>
+        <h2 class="header">Alyson & Kyle Wooderson</h2>
+        <h3>Our Story</h3>
+        <p class="container grey-text" style="color: rgb(148, 160, 165) !important;">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam obcaecati hic, veniam molestiae magni quidem, sed, sapiente exercitationem est mollitia praesentium. Perspiciatis vitae dicta repudiandae optio perferendis cumque quam aliquid? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam incidunt ipsam consequuntur officiis maxime perferendis sed distinctio quos inventore nostrum natus cupiditate, fuga error voluptas praesentium molestias ex possimus <beatae class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quisquam dolorum excepturi veritatis, provident quas temporibus? Dolorem nihil enim atque quibusdam modi deleniti officia saepe alias, rem eaque perferendis quas.</beatae></p>
+        <br></div>
+    </div>
+
+    <div class="parallax-container">
+        <div class="parallax"><img src="images/image2.jpg"></div>
+    </div>
+
+    <div class="z-depth-3 section white" style="text-align: center;">
+      <div class="row container flow-text"><br>
+      <h3>Our Wedding</h3>
+      <ul class="container grey-text" style="margin-top: -20px;"><u>Saturday, January 9th 2021</u></ul>
+      <br><br>
+      <!-- <div style="font-size: 50px; margin-top: -20px; color: dimgray;">
+        January 9th, 2021</div> -->
+      <!-- <br> -->
+      <div class="script-class" style="color: dimgray; font-size: 42px">Ceremony</div>
+      <p class="container grey-text" style="color: rgb(148, 160, 165) !important;">
+        
+        <ul class="container grey-text" style="font-size: 18px;"><b>St. Patrick's Catholic Church</b></ul>
+
+        <ul class="container grey-text">724 Camp St, New Orleans, LA 70130</ul>
+        <br><br>
+      <div class="script-class" style="color: dimgray; font-size: 42px">Reception</div>
+      <p class="container grey-text" style="color: rgb(148, 160, 165)">
+        <ul class="container grey-text" style="font-size: 18px;"><b>Ritz-Carlton Hotel</b></ul>
+        <ul class="container grey-text">921 Canal St, New Orleans, LA 70112</ul>
+      <br>
+
+        <br></div>
+        
+  </div>
+
+    <!-- FOOTER -->
+
+      <div class="footer-copyright" style="text-align: center; color: rgb(65, 65, 65);"><br>
+        <br>
+        <div id="countdown" class="script-class" style="font-size: 56px;"></div>
+        <div class="script-class" style="font-size: 32px;">until our wedding</div>
+        <div class="container" style="color: aliceblue;"><br>
+        Copyright © MMXX Grävy Design Co.
+        </div>
+      </div>
+      <!-- </footer> -->
+    </main>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!-- INITIALIZE MATERIALIZE JS -->
+    <script>M.AutoInit();</script>
+    <!-- COUNTDOWN CLOCK -->
+    <script>
+      var end = new Date('01/09/2021 10:0 AM');
+      
+          var _second = 1000;
+          var _minute = _second * 60;
+          var _hour = _minute * 60;
+          var _day = _hour * 24;
+          var timer;
+      
+          function showRemaining() {
+              var now = new Date();
+              var distance = end - now;
+              if (distance < 0) {
+      
+                  clearInterval(timer);
+                  document.getElementById('countdown').innerHTML = 'EXPIRED!';
+      
+                  return;
+              }
+              var days = Math.floor(distance / _day);
+              var hours = Math.floor((distance % _day) / _hour);
+              var minutes = Math.floor((distance % _hour) / _minute);
+      
+              document.getElementById('countdown').innerHTML = days + ' days ';
+              document.getElementById('countdown').innerHTML += hours + ' hrs ';
+              document.getElementById('countdown').innerHTML += minutes + ' mins ';
+          }
+      
+          timer = setInterval(showRemaining, 1000);
+      </script>
+
+
+</body>
+</html>
