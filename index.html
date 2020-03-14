@@ -89,7 +89,7 @@
       <br><br><br><br>
       
       <div style="color: dimgray; font-size: 18px;">
-        <u>Click here to RSVP</u>.
+        <a href="details.html#rsvp"><u>Click here to RSVP</u></a>.
       </div><br>
       <div style="color: dimgray; font-size: 18px;">
         If you would like to sign our guest book please click <u>here</u>.
@@ -155,6 +155,9 @@
             var minutes = Math.floor((distance % _hour) / _minute);
     
             document.getElementById('countdown').innerHTML = days + ' days<div class="script-class countdown" style="font-size: 32px; margin-top: -15px;">until our wedding</div>';
+            if (days <= 0) {
+              days === 0
+            }
             // document.getElementById('countdown').innerHTML += hours + ' hrs ';
             // document.getElementById('countdown').innerHTML += minutes + ' min';
         }
