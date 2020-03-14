@@ -20,6 +20,7 @@
 
     <!-- NAVBAR -->
     <main class="container-fluid">
+    <div class="navbar-fixed">
     <nav>
       <div class="nav-wrapper col-12-sm z-depth-3" style="background-color: #f5eef2;">
         <div class="container-fluid left-logo col-12">
@@ -27,13 +28,14 @@
         </div>
         <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
         <ul class="right menu-items hide-on-med-and-down">
-        <li><a href="details.html">WEDDING DETAILS</a></li>
-        <li><a href="reception.html">RECEPTION</a></li>
-        <li><a href="registry.html">REGISTRY</a></li>
-        <li style="margin-right: 10px;"><a href="gallery.html">PHOTO GALLERY</a></li>
+        <li><a class="menu-link" href="details.html">WEDDING DETAILS</a></li>
+        <li><a class="menu-link" href="reception.html">RECEPTION</a></li>
+        <li><a class="menu-link" href="registry.html">REGISTRY</a></li>
+        <li><a class="menu-link" href="gallery.html">PHOTO GALLERY</a></li>
         </ul>
     </div>
     </nav>
+    </div>
   
       <ul class="sidenav" id="mobile-demo">
       <li><a href="details.html">WEDDING DETAILS</a></li>
@@ -45,20 +47,21 @@
     <!-- PARALLAX -->
 
     <div class="parallax-container">
-        <div class="parallax"><img src="images/image1.jpg"></div>
+        <div class="parallax img1"><img src="images/image1.jpg"></div>
     </div>
 
     <div class="z-depth-3 section white" style="text-align: center;">
-        <div class="row container flow-text"><br>
+        <div class="row container flow-text"><br><br>
         <h2 class="header">Alyson & Kyle Wooderson</h2>
+        <br>
         <h3>Our Story</h3>
         <p class="container grey-text" style="color: rgb(148, 160, 165) !important;">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam obcaecati hic, veniam molestiae magni quidem, sed, sapiente exercitationem est mollitia praesentium. Perspiciatis vitae dicta repudiandae optio perferendis cumque quam aliquid? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam incidunt ipsam consequuntur officiis maxime perferendis sed distinctio quos inventore nostrum natus cupiditate, fuga error voluptas praesentium molestias ex possimus <beatae class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quisquam dolorum excepturi veritatis, provident quas temporibus? Dolorem nihil enim atque quibusdam modi deleniti officia saepe alias, rem eaque perferendis quas.</beatae></p>
-        <br></div>
+        <br><br></div>
     </div>
 
     <div class="parallax-container">
-        <div class="parallax"><img src="images/image2.jpg"></div>
+        <div class="parallax img2"><img src="images/image2.jpg"></div>
     </div>
 
     <div class="z-depth-3 section white" style="text-align: center;">
@@ -73,26 +76,35 @@
       <p class="container grey-text" style="color: rgb(148, 160, 165) !important;">
         
         <ul class="container grey-text" style="font-size: 18px;"><b>St. Patrick's Catholic Church</b></ul>
-
         <ul class="container grey-text">724 Camp St, New Orleans, LA 70130</ul>
+        <br>
+        <ul class="container grey-text">6PM</ul>
         <br><br>
       <div class="script-class" style="color: dimgray; font-size: 42px">Reception</div>
       <p class="container grey-text" style="color: rgb(148, 160, 165)">
         <ul class="container grey-text" style="font-size: 18px;"><b>Ritz-Carlton Hotel</b></ul>
         <ul class="container grey-text">921 Canal St, New Orleans, LA 70112</ul>
-      <br>
+        <br>
+        <ul class="container grey-text">8PM</ul>
+      <br><br><br><br>
+      
+      <div style="color: dimgray; font-size: 18px;">
+        <u>Click here to RSVP</u>.
+      </div><br>
+      <div style="color: dimgray; font-size: 18px;">
+        If you would like to sign our guest book please click <u>here</u>.
+      </div>
 
-        <br></div>
+      <br><br></div>
         
   </div>
 
     <!-- FOOTER -->
 
       <div class="footer-copyright" style="text-align: center; color: rgb(65, 65, 65);"><br>
-        <br>
-        <div id="countdown" class="script-class countdown" style="font-size: 56px;"></div>
-        <div class="script-class countdown" style="font-size: 32px;">until our wedding</div>
-        <div class="container" style="color: aliceblue;"><br>
+        <div id="countdown" class="script-class countdown" style="font-size: 60px;"></div>
+        <!-- <div class="script-class countdown" style="font-size: 32px; margin-top: -15px;">until our wedding</div> -->
+        <div class="container" style="color: rgba(240, 248, 255, 0.8);">
         Copyright © MMXX Grävy Design Co.
         </div>
       </div>
@@ -120,7 +132,7 @@
     
     // COUNTDOWN CLOCK //
 
-    var end = new Date('01/09/2021 10:0 AM');
+    var end = new Date('01/09/2021 6:0 PM');
     
         var _second = 1000;
         var _minute = _second * 60;
@@ -142,9 +154,9 @@
             var hours = Math.floor((distance % _day) / _hour);
             var minutes = Math.floor((distance % _hour) / _minute);
     
-            document.getElementById('countdown').innerHTML = days + ' days ';
-            document.getElementById('countdown').innerHTML += hours + ' hrs ';
-            document.getElementById('countdown').innerHTML += minutes + ' mins ';
+            document.getElementById('countdown').innerHTML = days + ' days<div class="script-class countdown" style="font-size: 32px; margin-top: -15px;">until our wedding</div>';
+            // document.getElementById('countdown').innerHTML += hours + ' hrs ';
+            // document.getElementById('countdown').innerHTML += minutes + ' min';
         }
     
         timer = setInterval(showRemaining, 1000);

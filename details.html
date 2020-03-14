@@ -20,6 +20,7 @@
 
     <!-- NAVBAR -->
     <main class="container-fluid">
+    <div class="navbar-fixed">
     <nav>
       <div class="nav-wrapper col-12-sm z-depth-3" style="background-color: #f5eef2;">
         <div class="container-fluid left-logo col-12">
@@ -34,6 +35,7 @@
         </ul>
     </div>
     </nav>
+    </div>
   
       <ul class="sidenav" id="mobile-demo">
       <li><a href="details.html">WEDDING DETAILS</a></li>
@@ -44,17 +46,48 @@
 
     <!-- PARALLAX -->
 
-    <div class="parallax-container">
+    <!-- <div class="parallax-container">
         <div class="parallax"><img src="images/image1.jpg"></div>
-    </div>
+    </div> -->
 
     <div class="z-depth-3 section white" style="text-align: center;">
-        <div class="row container flow-text"><br>
+        <div class="row container flow-text">
+            <br>
+
         <h2 class="header">Alyson & Kyle Wooderson</h2>
-        <h3>Our Story</h3>
-        <p class="container grey-text" style="color: rgb(148, 160, 165) !important;">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam obcaecati hic, veniam molestiae magni quidem, sed, sapiente exercitationem est mollitia praesentium. Perspiciatis vitae dicta repudiandae optio perferendis cumque quam aliquid? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam incidunt ipsam consequuntur officiis maxime perferendis sed distinctio quos inventore nostrum natus cupiditate, fuga error voluptas praesentium molestias ex possimus <beatae class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quisquam dolorum excepturi veritatis, provident quas temporibus? Dolorem nihil enim atque quibusdam modi deleniti officia saepe alias, rem eaque perferendis quas.</beatae></p>
-        <br></div>
+
+        <h3 class="details">Our Wedding Details</h3><br>
+
+        <h3 style="font-family: 'Great Vibes'; font-size: 52px;">
+            Dress
+        </h3>
+        <div class="container grey-text" style="color: rgb(148, 160, 165) !important;">
+        Formal, black tie optional (suit and tie and dresses)
+        </div><br><br>
+
+        <h3 style="font-family: 'Great Vibes'; font-size: 52px;">
+            RSVP
+        </h3>
+        <div class="container grey-text" style="color: rgb(148, 160, 165) !important;">
+        Please RSVP before August 20th, 2020.
+        <div>Send all responses by clicking <u>here</u>.</div>
+        </div><br><br>
+
+        <h3 style="font-family: 'Great Vibes'; font-size: 52px;">
+            Where to Stay
+        </h3>
+        <div class="container grey-text" style="color: rgb(148, 160, 165) !important;">
+        You may request a hotel reservation in the RSVP form <u>below</u>.
+        </div><br><br>
+
+        <h3 style="font-family: 'Great Vibes'; font-size: 52px;">
+            Contact Us
+        </h3>
+        <div class="container grey-text" style="color: rgb(148, 160, 165) !important;">
+        Click <u>here</u> to contact us directly, otherwise please fill out the form to let us know if you will be attending.
+        </div>
+
+        </div><br><br><br>
     </div>
 
     <div class="parallax-container">
@@ -62,36 +95,74 @@
     </div>
 
     <div class="z-depth-3 section white" style="text-align: center;">
-      <div class="row container flow-text"><br>
-      <h3>Our Wedding</h3>
-      <ul class="container grey-text" style="margin-top: -20px;"><u>Saturday, January 9th 2021</u></ul>
-      <br><br>
-      <!-- <div style="font-size: 50px; margin-top: -20px; color: dimgray;">
-        January 9th, 2021</div> -->
-      <!-- <br> -->
-      <div class="script-class" style="color: dimgray; font-size: 42px">Ceremony</div>
-      <p class="container grey-text" style="color: rgb(148, 160, 165) !important;">
-        
-        <ul class="container grey-text" style="font-size: 18px;"><b>St. Patrick's Catholic Church</b></ul>
-
-        <ul class="container grey-text">724 Camp St, New Orleans, LA 70130</ul>
+        <div class="row container flow-text"><br>
+        <h3>RSVP CHECK-IN</h3>
+        <div class="container grey-text" style="color: rgb(148, 160, 165) !important;">
+            Please fill out this form to let us know if you will be attending.
+        </div>
+        <!-- <ul class="container grey-text" style="margin-top: -20px;"><u>Saturday, January 9th 2021</u></ul> -->
         <br><br>
-      <div class="script-class" style="color: dimgray; font-size: 42px">Reception</div>
-      <p class="container grey-text" style="color: rgb(148, 160, 165)">
-        <ul class="container grey-text" style="font-size: 18px;"><b>Ritz-Carlton Hotel</b></ul>
-        <ul class="container grey-text">921 Canal St, New Orleans, LA 70112</ul>
-      <br>
 
-        <br></div>
+        <div class="row">
+            <form class="col s12">
+              <div class="row">
+                <div class="input-field col s6">
+                  <input placeholder="Placeholder" id="first_name" type="text" class="validate">
+                  <label for="first_name">First Name</label>
+                </div>
+                <div class="input-field col s6">
+                  <input id="last_name" type="text" class="validate">
+                  <label for="last_name">Last Name</label>
+                </div></div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <input id="password" type="password" class="validate">
+                  <label for="password">Password</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <input id="email" type="email" class="validate">
+                  <label for="email">Email</label>
+                </div>
+              </div></div>
+
+            <div class="input-field col s12">
+                <select>
+                <option value="" disabled selected>Choose your option</option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+                </select>
+                <label>Materialize Select</label>
+            </div>
+        
+            <div class="input-field col s12">
+                <select multiple>
+                <option value="" disabled selected>Choose your option</option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+                </select>
+                <label>Materialize Multiple Select</label>
+            </div>
+        </form>
+        <!-- <div style="font-size: 50px; margin-top: -20px; color: dimgray;">
+            January 9th, 2021</div> -->
+        <!-- <br> -->
+        </div>
+        <br><br>
+        <a class="waves-effect waves-light btn grey lighten-3">submit</a>
+        <br><br><br><br>
         
   </div>
+  <br><br>
 
     <!-- FOOTER -->
 
       <div class="footer-copyright" style="text-align: center; color: rgb(65, 65, 65);"><br>
-        <br>
-        <div id="countdown" class="script-class countdown" style="font-size: 56px;"></div>
-        <div class="script-class countdown" style="font-size: 32px;">until our wedding</div>
+        <div id="countdown" class="script-class countdown" style="font-size: 60px;"></div>
+        <!-- <div class="script-class countdown" style="font-size: 32px; margin-top: -15px;">until our wedding</div> -->
         <div class="container" style="color: aliceblue;"><br>
         Copyright © MMXX Grävy Design Co.
         </div>
@@ -120,7 +191,7 @@
     
     // COUNTDOWN CLOCK //
 
-    var end = new Date('01/09/2021 10:0 AM');
+    var end = new Date('01/09/2021 6:0 PM');
     
         var _second = 1000;
         var _minute = _second * 60;
@@ -142,9 +213,9 @@
             var hours = Math.floor((distance % _day) / _hour);
             var minutes = Math.floor((distance % _hour) / _minute);
     
-            document.getElementById('countdown').innerHTML = days + ' days ';
-            document.getElementById('countdown').innerHTML += hours + ' hrs ';
-            document.getElementById('countdown').innerHTML += minutes + ' mins ';
+            document.getElementById('countdown').innerHTML = days + ' days<div class="script-class countdown" style="font-size: 32px; margin-top: -15px;">until our wedding</div>';
+            // document.getElementById('countdown').innerHTML += hours + ' hrs ';
+            // document.getElementById('countdown').innerHTML += minutes + ' min';
         }
     
         timer = setInterval(showRemaining, 1000);

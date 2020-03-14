@@ -5,7 +5,7 @@ html,body {
 }
 
 body {
-    background-color: #f5eef2;
+    background-color: #faf4f7c2;
     font-family: 'Questrial';
 }
 
@@ -15,6 +15,50 @@ nav {
 
 a {
     color: rgb(51, 51, 51) !important
+
+}
+
+.menu-link:hover {
+    background-color: rgba(56, 56, 56) !important;
+    color: rgb(235, 235, 235) !important;
+    cursor: default !important;
+}
+
+.brand-logo {
+    font-family: 'Dancing Script', cursive;
+    background-color: #f5eef200 !important;
+}
+
+.brand-logo:hover {
+    font-family: 'Dancing Script', cursive;
+    background-color: #f5eef200 !important;
+    color: #505050 !important;
+    text-shadow: 3px 3px #da91ca2a;
+    cursor: default !important;
+}
+
+.divider
+{
+	position: relative;
+	margin-top: 90px;
+	height: 1px;
+}
+
+.div-transparent:before
+{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 5%;
+	right: 5%;
+	width: 90%;
+	height: 1px;
+	background-image: linear-gradient(to right, transparent, rgb(48,49,51), transparent);
+}
+
+.details {
+    margin-top: -50px;
+    font-size: 60px;
 }
 
 h3 {
@@ -22,12 +66,12 @@ h3 {
     /* font-family: 'Great Vibes'; */
 }
 
-.right {
-    font-size: 32px !important
+img {
+    width: 2320px;
 }
 
-.brand-logo {
-    font-family: 'Dancing Script', cursive;
+.right {
+    font-size: 32px !important
 }
 
 .left-logo {
@@ -37,9 +81,10 @@ h3 {
 
 .header {
     font-family: 'Dancing Script', cursive;
-    font-size: 84px;
-    color: rgb(141, 167, 182);
+    font-size: 100px;
+    color: rgb(147, 165, 173);
     margin-bottom: 75px;
+    text-shadow: 3px 3px #91abda46;
 }
 
 .grey-text {
@@ -52,12 +97,13 @@ h3 {
 }
 
 .countdown {
-        text-shadow: 4px 4px #da91ca46;
+        text-shadow: 3px 3px #da91ca46;
 }
 
 .footer-copyright {
     /* margin-bottom: -10px !important; */
     background-image: "../../images/flowers1.jpg" !important;
+    padding: 5px;
 }
 
 /* PUSHPIN */
@@ -72,4 +118,33 @@ h3 {
 
 .pinned {
   position: fixed !important;
+}
+
+@media only screen and (max-width: 767px) {
+    
+    img {
+        width: 1250px !important;
+        height: auto;
+    }
+    
+    .img1 {
+        width: 320px;
+        height: auto;
+    }
+
+    .img2 {
+        /* width: 1200px !important; */
+        height: auto;
+    }
+
+    .header {
+        font-size: 60px;
+        margin-top: -5px;
+        margin-bottom: 10px;
+    }
+
+    .details {
+        margin-top: 25px;
+        font-size: 32px;
+    }
 }
