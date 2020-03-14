@@ -1,12 +1,11 @@
 html,body {
     margin: 0 auto;
-    background-image: "../../images/flowers1.jpg";
-    background-size: cover;
+    /* background-image: "../../images/flowers1.jpg";
+    background-size: cover; */
 }
 
 body {
-    /* background-color: #f5eef2; */
-
+    background-color: #f5eef2;
     font-family: 'Questrial';
 }
 
@@ -52,7 +51,25 @@ h3 {
     font-family: 'Pinyon Script';
 }
 
+.countdown {
+        text-shadow: 4px 4px #da91ca46;
+}
+
 .footer-copyright {
     /* margin-bottom: -10px !important; */
     background-image: "../../images/flowers1.jpg" !important;
+}
+
+/* PUSHPIN */
+
+.pin-top {
+  position: relative;
+}
+
+.pin-bottom {
+  position: relative;
+}
+
+.pinned {
+  position: fixed !important;
 }
